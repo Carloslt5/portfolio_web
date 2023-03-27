@@ -1,0 +1,46 @@
+// FONT    
+@use '_vars' as v
+html
+  font-size: 100%
+
+body
+  background: white
+  font-family: 'Montserrat', sans-serif
+  font-weight: 400
+  color: v.$color-black
+
+p 
+  font-size: .875em
+  margin-bottom: .875em
+
+h1, h2, h3, h4, h5
+  font-family: 'Montserrat', sans-serif
+  font-weight: 900
+
+h1
+  font-size: clamp(2em, 8.5vw, 3.125em)
+  margin-top: 0
+  margin-bottom: .5em
+  line-height: .8em
+h2
+  font-size: 2.5em
+  margin-bottom: .5em
+h3
+  font-size: 2em
+  margin-top: 0em
+  margin-bottom: .625em
+
+h4
+  font-size: clamp(1.1em, 3vw, 1.5em)
+  margin-top: 0em
+  margin-bottom: .625em
+
+h5
+  font-size: 1.25em
+  margin-top: 0em
+  margin-bottom: .625em
+
+small, .text_small
+  font-size: 0.8em
+  margin-top: 0em
+  margin-bottom: .625em

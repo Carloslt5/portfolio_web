@@ -1,0 +1,91 @@
+// RESET  
+@forward '_reset'
+// FONT
+@forward '_fonts'
+// BUTTONS
+@forward '_buttons'
+@forward 'partials/_header.sass'
+@forward 'partials/_hero-text.sass'
+@forward 'partials/_proyects.sass'
+@forward 'partials/_contact.sass'
+@forward 'partials/_footer.sass'
+// MISINS
+@use '_mixin' as mix
+@use '_vars' as v
+
+body
+    background-color: v.$color-white
+
+section
+    padding-top: 3.75em
+    padding-bottom: 3.75em
+
+.wrapper
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+    width: 80%
+    max-width: 1440px
+    margin: auto
+    @include mix.tablet
+        width: 90%
+    @include mix.mobile
+        width: 95%
+
+.container_title
+    align-items: center
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    margin: 0em auto
+    margin-bottom: 3.75em
+    text-align: center
+    &_h1
+        font-size: clamp(1em, 9vw, 3.125em)
+        color: v.$color-black
+        margin: 0
+        position: absolute
+    &_p
+        font-size: clamp(2em, 12vw, 6em)
+        margin: 0
+        position: relative
+        font-family: v.$tipo-principal
+        font-weight: 900
+        color: v.$color-white
+        text-shadow: 0 0 1px v.$color-black, -1px -1px 0 v.$color-black, 1px -1px 0 v.$color-black, -1px 1px 0 v.$color-black, 1px 1px 0 v.$color-black
+
+// PAGES
+
+
+.description .container_title
+    margin-bottom: 0
+    padding: 5em 0
+.description
+    &__strong
+        font-size: 1rem
+        margin-bottom: 1em
+    &__p
+        max-width: 70ch
+        margin-bottom: 2em
+        p
+            margin-bottom: 0
+    &__ol
+        padding-left: 1em
+
+#visual
+    padding-top: 0
+
+.visual
+    &__container
+        display: flex
+        justify-content: space-between
+        gap: 1em
+        width: 90%
+        margin: 0 auto
+
+    &__video
+        width: 80%
+        margin: 0 auto
+        width: 50%
+
