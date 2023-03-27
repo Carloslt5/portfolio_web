@@ -653,15 +653,25 @@ section {
 
 .visual__container {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   gap: 1em;
   width: 90%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .visual__container {
+    flex-direction: column;
+  }
+}
 .visual__video {
-  width: 80%;
   margin: 0 auto;
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .visual__video {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
