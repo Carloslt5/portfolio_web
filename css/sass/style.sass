@@ -79,13 +79,18 @@ section
 .visual
     &__container
         display: flex
+        flex-flow: row nowrap
         justify-content: space-between
         gap: 1em
         width: 90%
         margin: 0 auto
-
+        @include mix.tablet
+            flex-direction: column
     &__video
-        width: 80%
         margin: 0 auto
         width: 50%
+        @include mix.tablet
+            width: 100%
+        
+
 
