@@ -525,7 +525,7 @@ small, .text_small {
   color: #FCFCFC;
 }
 
-#textarea {
+#message {
   min-height: 30em;
   max-height: 40em;
   background: #FCFCFC;
