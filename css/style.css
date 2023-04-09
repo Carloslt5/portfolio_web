@@ -549,6 +549,7 @@ small, .text_small {
 #submit {
   width: fit-content;
   cursor: pointer;
+  margin-top: 1em;
 }
 
 input::placeholder {
