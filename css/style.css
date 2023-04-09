@@ -318,13 +318,16 @@ small, .text_small {
     transform: scale(1);
   }
 }
+#arrow {
+  position: absolute;
+  bottom: 1em;
+}
+
 #hero_arrow {
   width: 1.5em;
   fill: #FCFCFC;
   transition: all ease 0.5s;
   opacity: 0.5;
-  position: absolute;
-  bottom: 1em;
 }
 #hero_arrow:hover {
   transform: translateY(-5px);
