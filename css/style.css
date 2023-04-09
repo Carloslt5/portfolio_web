@@ -291,6 +291,7 @@ small, .text_small {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .hero__text {
   max-width: 60ch;
