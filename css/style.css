@@ -576,6 +576,7 @@ input::placeholder {
 }
 .footer .icon_rrss svg {
   fill: #FCFCFC;
+  width: 1.5em;
 }
 
 body {
@@ -642,7 +643,7 @@ section {
   margin-bottom: 1em;
 }
 .description__p {
-  max-width: 70ch;
+  max-width: 60ch;
   margin-bottom: 2em;
 }
 .description__p p {
