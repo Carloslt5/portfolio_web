@@ -1,0 +1,79 @@
+---
+import logo from "@assets/images/logo.svg"
+
+const menuItems = [
+  { name: "Sobre mi", href: "#" },
+  { name: "Proyectos", href: "#about-me" },
+  { name: "Contacto", href: "#contact", custome: true },
+]
+---
+
+<header class="bg-blur absolute left-0 top-0 w-full">
+  <div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-2">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <span class="self-center whitespace-nowrap">
+        <img src={logo.src} class="h-8" alt="Carlos Liao logo" />
+      </span>
+    </a>
+    <button
+      id="navbar-toggle"
+      data-collapse-toggle="navbar-default"
+      type="button"
+      class="flex h-9 w-9 items-center justify-center rounded-md text-white hover:bg-woodsmoke-500 md:hidden"
+      aria-controls="navbar-default"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        ></path>
+      </svg>
+    </button>
+    <nav
+      class="flex h-0 w-full transform items-center justify-center overflow-hidden transition-all duration-300 ease-in-out md:flex md:h-auto md:w-auto md:transform-none"
+      id="navbar-default"
+    >
+      <ul class="flex w-full flex-col items-center gap-6 md:flex-row">
+        {
+          menuItems.map((item) => (
+            <li class="menu-item font-thin uppercase text-white">
+              <a
+                href={item.href}
+                aria-current="page"
+                class:list={[
+                  "block text-sm",
+                  item.custome
+                    ? "btn-custom"
+                    : "p-2 decoration-0 underline-offset-4 hover:underline",
+                ]}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const button = document.getElementById("navbar-toggle")
+  const nav = document.getElementById("navbar-default")
+  if (!button || !nav) {
+    throw new Error("Navbar toggle or navbar default not found")
+  }
+
+  button.addEventListener("click", () => {
+    nav.classList.toggle("h-[30vh]")
+  })
+
+  const menuItems = document.querySelectorAll(".menu-item")
+  menuItems.forEach((el) => {
+    el.addEventListener("click", () => {
+      nav.classList.toggle("h-[30vh]")
+    })
+  })
+</script>
