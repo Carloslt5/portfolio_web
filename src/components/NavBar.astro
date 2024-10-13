@@ -1,15 +1,10 @@
 ---
 import logo from "@assets/images/logo.svg"
-
-const menuItems = [
-  { name: "Sobre mi", href: "#" },
-  { name: "Proyectos", href: "#about-me" },
-  { name: "Contacto", href: "#contact", custome: true },
-]
+import { menuItems } from "src/const/MenuItems"
 ---
 
 <header class="bg-blur absolute left-0 top-0 w-full">
-  <div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-2">
+  <div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
       <span class="self-center whitespace-nowrap">
         <img src={logo.src} class="h-8" alt="Carlos Liao logo" />
@@ -44,7 +39,7 @@ const menuItems = [
                 aria-current="page"
                 class:list={[
                   "block text-sm",
-                  item.custome
+                  item.custom
                     ? "btn-custom"
                     : "p-2 decoration-0 underline-offset-4 hover:underline",
                 ]}

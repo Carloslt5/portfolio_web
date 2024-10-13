@@ -9,7 +9,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        black: "#212121",
+        dark: "#212121",
         white: "#FCFCFC",
         woodsmoke: {
           50: "#f6f6f6",
@@ -62,7 +62,7 @@ export default {
         },
         p: {
           fontSize: theme("fontSize.base"),
-          marginBottom: theme("spacing.4"),
+          marginBottom: theme("spacing.3"),
         },
       })
     },
