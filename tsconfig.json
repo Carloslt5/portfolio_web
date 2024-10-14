@@ -20,6 +20,9 @@
       ],
       "@sections/*": [
         "src/sections/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
       ]
     },
     "plugins": [
