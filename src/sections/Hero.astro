@@ -1,6 +1,7 @@
 ---
-import { SectionIds } from "@const/MenuItems"
+import { SectionIds } from "@const/menuItems"
 import ArrowDown from "@icons/ArrowDown.astro"
+import { socialMediaComponents } from "@utils/utils"
 ---
 
 <section
@@ -10,7 +11,7 @@ import ArrowDown from "@icons/ArrowDown.astro"
   <div class="h-full bg-black bg-opacity-50">
     <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
       <h1>BIENVENIDO.</h1>
-      <article class="mb-4 max-w-[70ch]">
+      <article class="max-w-[70ch]">
         <p>
           Soy Carlos,<strong> desarrollador web</strong>, con experiencia en <strong
             >diseño gráfico y artes gráficas.</strong
@@ -35,10 +36,19 @@ import ArrowDown from "@icons/ArrowDown.astro"
           > y recibir <em>feedback</em> de ello.
         </p>
       </article>
-      <a href="#proyect-group" title="Ver más" class="btn-custom">Ver más</a>
-      <ArrowDown
-        class="absolute bottom-4 left-1/2 h-8 -translate-x-1/2 transform opacity-80 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:opacity-100"
-      />
+      <div class="mb-3 flex flex-row gap-3 text-white">
+        {
+          Object.entries(socialMediaComponents).map(([key, IconComponent]) => {
+            return (
+              <a href={key} target="_blank" rel="noopener noreferrer" title={key}>
+                <IconComponent class="basic-hover h-8 w-8 cursor-pointer fill-current" />
+              </a>
+            )
+          })
+        }
+      </div>
+      <a href="#proyect-group" title="Ver más" class="btn-custom">Ver proyectos</a>
+      <ArrowDown class="basic-hover absolute bottom-4 left-1/2 h-8 -translate-x-1/2" />
     </div>
   </div>
 </section>

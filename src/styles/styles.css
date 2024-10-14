@@ -10,6 +10,10 @@
   .btn-custom {
     @apply inline-block bg-transparent transition-all ease-in-out duration-500 py-2 px-6 border-white rounded-lg w-fit border-[0.5px] hover:text-dark hover:shadow-[inset_0_-100px_0_0_white] active:scale-90;
   }
+
+  .basic-hover {
+    @apply transform opacity-80 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:opacity-100;
+  }
 }
 
 @font-face {
