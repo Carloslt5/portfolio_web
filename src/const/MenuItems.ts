@@ -2,6 +2,7 @@ export enum SectionIds {
   ABOUT_ME = "about-me",
   PROJECT_GROUP = "proyect-group",
   CONTACT = "contact",
+  FOOTER = "footer",
 }
 
 export const menuItems = [

@@ -31,7 +31,7 @@ export default {
         h3: "2em",
         h4: "clamp(1.1em, 3vw, 1.5em)",
         h5: "1.25em",
-        base: "1em",
+        p: "1em",
         small: "0.8em",
       },
     },

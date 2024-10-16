@@ -1,7 +1,11 @@
 ---
+import RenderSocialMediaLink from "@components/RenderSocialMediaLink.astro"
 import { SectionIds } from "@const/menuItems"
+import { heroContent } from "@const/portfolioData"
+import { SocialMedia } from "@const/socialMedia"
 import ArrowDown from "@icons/ArrowDown.astro"
-import { socialMediaComponents } from "@utils/utils"
+
+const socialMediasinfo = [SocialMedia.GITHUB, SocialMedia.LINKEDIN, SocialMedia.CV]
 ---
 
 <section
@@ -10,43 +14,15 @@ import { socialMediaComponents } from "@utils/utils"
 >
   <div class="h-full bg-black bg-opacity-50">
     <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
-      <h1>BIENVENIDO.</h1>
+      <h1 class="uppercase">{heroContent.title}</h1>
       <article class="max-w-[70ch]">
-        <p>
-          Soy Carlos,<strong> desarrollador web</strong>, con experiencia en <strong
-            >diseño gráfico y artes gráficas.</strong
-          >
-        </p>
-        <p>
-          Durante <strong>mi experiencia</strong> como diseñador he adquirido gran <strong
-            >interés por cómo integrar, implementar y dar funcionalidad</strong
-          > a todo esto en un entorno digital.
-        </p>
-        <p>
-          Esto me ha llevado a continuar mi formación en <strong>diseño UX/UI</strong>, pero sobre
-          todo en el <strong> mundo del desarrollo web.</strong>
-        </p>
-        <p>
-          Durante mi formación he logrado <strong>fortalecer mis conocimientos</strong> tanto individuales
-          como grupales, realizando proyectos y trabajando en equipo.
-        </p>
-        <p>
-          Actualmente considero que sigo formándome diariamente, lo que me lleva a querer <strong
-            >compartir mis conocimientos</strong
-          > y recibir <em>feedback</em> de ello.
-        </p>
+        {heroContent.paragraphs.map((paragraph) => <p set:html={paragraph} />)}
       </article>
-      <div class="mb-3 flex flex-row gap-3 text-white">
-        {
-          Object.entries(socialMediaComponents).map(([key, IconComponent]) => {
-            return (
-              <a href={key} target="_blank" rel="noopener noreferrer" title={key}>
-                <IconComponent class="basic-hover h-8 w-8 cursor-pointer fill-current" />
-              </a>
-            )
-          })
-        }
+
+      <div class="flex flex-row gap-3">
+        <RenderSocialMediaLink info={socialMediasinfo} />
       </div>
+
       <a href="#proyect-group" title="Ver más" class="btn-custom">Ver proyectos</a>
       <ArrowDown class="basic-hover absolute bottom-4 left-1/2 h-8 -translate-x-1/2" />
     </div>

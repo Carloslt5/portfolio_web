@@ -1,0 +1,21 @@
+---
+import type { SocialMedia } from "@const/socialMedia"
+import { mapSocialMediaComponents } from "@utils/utils"
+
+type Props = {
+  info: SocialMedia[]
+}
+
+const { info } = Astro.props
+---
+
+{
+  info.map((media) => {
+    const IconComponent = mapSocialMediaComponents[media]
+    return (
+      <a href={media} target="_blank" rel="noopener noreferrer" title={media}>
+        <IconComponent class="basic-hover h-8 w-8 cursor-pointer fill-current" />
+      </a>
+    )
+  })
+}

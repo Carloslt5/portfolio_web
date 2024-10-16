@@ -1,0 +1,26 @@
+---
+import RenderSocialMediaLink from "@components/RenderSocialMediaLink.astro"
+import { SectionIds } from "@const/menuItems"
+import { footerText } from "@const/portfolioData"
+import { SocialMedia } from "@const/socialMedia"
+
+const socialMediasinfo = [
+  SocialMedia.EMAIL,
+  SocialMedia.GITHUB,
+  SocialMedia.LINKEDIN,
+  SocialMedia.CV,
+]
+---
+
+<section
+  class="flex flex-col items-center justify-center gap-3 bg-woodsmoke-950 p-6 text-white"
+  id={SectionIds.FOOTER}
+>
+  <div class="flex flex-row gap-3">
+    <RenderSocialMediaLink info={socialMediasinfo} />
+  </div>
+  <article class="flex flex-col items-center justify-center">
+    <small>{footerText} </small>
+    <small>©{new Date().getFullYear()}</small>
+  </article>
+</section>

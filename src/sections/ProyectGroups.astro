@@ -1,7 +1,9 @@
 ---
+import Title from "@components/Title.astro"
 import { SectionIds } from "@const/menuItems"
+import { proyectGroupContent } from "@const/portfolioData"
 ---
 
 <section class="mt-20" id={SectionIds.PROJECT_GROUP}>
-  <h1>Proyectos</h1>
+  <Title title={proyectGroupContent.title} />
 </section>
