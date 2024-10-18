@@ -1,7 +1,7 @@
 ---
 order: 2
 title: "Brandbook"
-mainImg: "/images/proyects/brandbook/visual-brandbook_00.webp"
+mainImg: "./../../assets/images/proyects/brandbook/visual-brandbook_00.webp"
 ---
 
 # GRÁFICA PUBLICITARIA
