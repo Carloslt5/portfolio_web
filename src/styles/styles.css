@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer components {
+  .bg-ligth {
+    @apply bg-woodsmoke-50;
+  }
+
   .bg-blur {
     @apply bg-woodsmoke-950/80 backdrop-blur-md;
   }
 
   .btn-custom {
-    @apply inline-block bg-transparent transition-all ease-in-out duration-500 py-2 px-6 border-white rounded-lg w-fit border-[0.5px] hover:text-dark hover:shadow-[inset_0_-100px_0_0_white] active:scale-90;
+    @apply inline-block w-fit rounded-lg border-[0.5px] border-white bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:text-dark hover:shadow-[inset_0_-100px_0_0_white] active:scale-90;
   }
 
   .basic-hover {
@@ -18,24 +22,24 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 200;
-  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 100;
-  src: url('/fonts/Montserrat-Thin.ttf') format('truetype');
+  src: url("/fonts/Montserrat-Thin.ttf") format("truetype");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url('/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  src: url("/fonts/Montserrat-ExtraBold.ttf") format("truetype");
 }

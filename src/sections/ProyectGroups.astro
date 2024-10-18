@@ -1,9 +1,33 @@
 ---
-import Title from "@components/Title.astro"
+import Title from "@components/ui/Title.astro"
 import { SectionIds } from "@const/menuItems"
 import { proyectGroupContent } from "@const/portfolioData"
+import { getCollection } from "astro:content"
+
+const proyects = await getCollection("proyects")
 ---
 
-<section class="mt-20" id={SectionIds.PROJECT_GROUP}>
+<section class="bg-re mt-20" id={SectionIds.PROJECT_GROUP}>
   <Title title={proyectGroupContent.title} />
+  <div class="flex flex-row flex-wrap items-center justify-center">
+    {
+      proyects
+        .sort((a, b) => b.data.order - a.data.order)
+        .map(({ data: { mainImg, title } }) => {
+          return (
+            <div class="group relative aspect-square w-full cursor-pointer overflow-hidden bg-woodsmoke-200 sm:w-1/2 md:w-1/3">
+              <img
+                src={mainImg}
+                alt={title}
+                class="transform transition-transform duration-300 ease-in-out md:grayscale md:group-hover:scale-105 md:group-hover:grayscale-0"
+                loading="lazy"
+              />
+              <div class="absolute bottom-0 left-0 p-3 transition-all duration-300 ease-in-out group-hover:translate-y-0 md:translate-y-16">
+                <h3 class="text-xl md:text-2xl">{title}</h3>
+              </div>
+            </div>
+          )
+        })
+    }
+  </div>
 </section>
