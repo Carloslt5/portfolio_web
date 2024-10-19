@@ -1,38 +1,41 @@
 ---
-import InputField from "@components/ui/InputField.astro"
+import InputField, { type InputType } from "@components/ui/InputField.astro"
 import { contactContent } from "@const/portfolioData"
 ---
 
 <form id="form" method="post" class="space-y-6">
-  <InputField
-    type="text"
-    name={contactContent.form.name.name}
-    id={contactContent.form.name.name}
-    placeholder={contactContent.form.name.placeholder}
-    required
-  />
-  <InputField
-    type="email"
-    name={contactContent.form.email.name}
-    id={contactContent.form.email.name}
-    placeholder={contactContent.form.email.placeholder}
-    required
-  />
-  <textarea
-    name={contactContent.form.message.name}
-    id={contactContent.form.message.name}
-    placeholder={contactContent.form.message.placeholder}
-    class="peer min-h-80 w-full rounded-sm p-3"
-    required
-  >
-  </textarea>
+  {
+    contactContent.formField.map((field) => {
+      if (field.type === "textarea") {
+        return (
+          <textarea
+            name={field.name}
+            id={field.id}
+            placeholder={field.placeholder}
+            class="peer min-h-80 w-full rounded-sm p-3"
+            required
+          />
+        )
+      }
+
+      return (
+        <InputField
+          type={field.type as InputType}
+          name={field.name}
+          id={field.id}
+          placeholder={field.placeholder}
+          required
+        />
+      )
+    })
+  }
   <div>Recaptcha</div>
   <button
     type="submit"
-    id={contactContent.form.submit.name}
-    value={contactContent.form.submit.text}
+    id={contactContent.formButton.name}
+    value={contactContent.formButton.text}
     class="btn-custom cursor-pointer text-white"
   >
-    {contactContent.form.submit.text}
+    {contactContent.formButton.text}
   </button>
 </form>

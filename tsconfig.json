@@ -18,9 +18,6 @@
       "@layouts/*": [
         "src/layouts/*"
       ],
-      "@sections/*": [
-        "src/sections/*"
-      ],
       "@styles/*": [
         "src/styles/*"
       ],

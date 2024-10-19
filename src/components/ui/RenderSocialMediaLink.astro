@@ -4,9 +4,10 @@ import { mapSocialMediaComponents } from "@utils/utils"
 
 type Props = {
   info: SocialMedia[]
+  class?: string
 }
 
-const { info } = Astro.props
+const { info, class: additionalClass } = Astro.props
 ---
 
 {
@@ -14,7 +15,9 @@ const { info } = Astro.props
     const IconComponent = mapSocialMediaComponents[media]
     return (
       <a href={media} target="_blank" rel="noopener noreferrer" title={media}>
-        <IconComponent class="basic-hover h-8 w-8 cursor-pointer fill-current" />
+        <IconComponent
+          class={`${additionalClass} basic-hover h-8 w-8 cursor-pointer fill-current`}
+        />
       </a>
     )
   })

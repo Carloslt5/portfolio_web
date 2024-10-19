@@ -1,3 +1,7 @@
+import Email from "@components/icons/Email.astro"
+import Phone from "@components/icons/Phone.astro"
+import Pin from "@components/icons/Pin.astro"
+
 export const heroContent = {
   title: "Bienvenido.",
   paragraphs: [
@@ -15,23 +19,54 @@ export const proyectGroupContent = {
 }
 
 export const contactContent = {
-  form: {
-    name: {
+  formField: [
+    {
+      type: "text",
+      id: "name",
       name: "name",
       placeholder: "Nombre",
     },
-    email: {
+    {
+      type: "text",
+      id: "email",
       name: "email",
       placeholder: "Email",
     },
-    message: {
-      name: "message",
-      placeholder: "Mensaje",
+    {
+      type: "textarea",
+      id: "textarea",
+      name: "textarea",
+      placeholder: "Introduce aqui tu mensaje",
     },
-    submit: {
-      name: "submit",
-      text: "ENVIAR",
-    },
+  ],
+  formButton: {
+    name: "submit",
+    text: "ENVIAR",
   },
+
+  contact: [
+    {
+      title: "TELÉFONO MÓVIL",
+      subtitle: "+34 697 46 19 96",
+      text: "Zona horaria de Madrid (GMT+1).",
+      link: "https://wa.me/34697461996",
+      icon: Phone,
+    },
+    {
+      title: "LOCALIDAD",
+      subtitle: "MADRID, ESPAÑA",
+      text: "Para reuniones o entrevistas presenciales.",
+      link: "https://www.google.es/maps/place/Madrid",
+      icon: Pin,
+    },
+    {
+      title: "CONTACTO",
+      subtitle: "MADRID, ESPAÑA",
+      text: "Escríbeme, hablemos.",
+      link: "mailto:carlos.lt97@gmail.com",
+      icon: Email,
+    },
+  ],
 }
+
 export const footerText = "Página web realizada por Carlos Liao Trinh. ¡Gracias por visitar!"
