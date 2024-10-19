@@ -11,4 +11,4 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Diseño de un **flyer** para el negocio de compraventa de inmuebles, Invermax. Con esto se busca **publicitar y promocionar** los diferentes productos y servicios.

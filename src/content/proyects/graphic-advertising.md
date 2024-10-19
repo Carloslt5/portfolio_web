@@ -11,4 +11,6 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Creación de **gráfica publicitaria** cuyo principal elemento es el nuevo sabor de Fanta Kiwi + Menta.
+
+El producto a desarrollar destaca por su porcentaje de zumo, refrescante y divertido, es gente joven, adolescentes.

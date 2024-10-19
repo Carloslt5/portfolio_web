@@ -11,4 +11,6 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+**Desarrollo y diseño de APP** con la que se intenta solucionar la gestión de checkins/ out de empleados.
+
+Este proyecto va desde: **análisis** de la competencia, **investigación de usuario, journey map,** desarrollo y diseño de la **interfaz de usuario y prototipado** funcional.

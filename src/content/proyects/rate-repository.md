@@ -11,4 +11,10 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Aplicación móvil realizado con React Native que permite buscar usuarios de Github, obtener sus perfiles y sus repositorios.
+
+Test user:
+
+- **User:** user@email.com
+
+- **Password:** user123

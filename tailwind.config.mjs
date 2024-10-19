@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import defaultTheme from "tailwindcss/defaultTheme"
+import typography from "@tailwindcss/typography"
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -34,9 +35,21 @@ export default {
         p: "1em",
         small: "0.8em",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: false,
+            code: false,
+            "pre code": false,
+            "code::before": false,
+            "code::after": false,
+          },
+        },
+      },
     },
   },
   plugins: [
+    typography,
     function ({ addBase, theme }) {
       addBase({
         h1: {

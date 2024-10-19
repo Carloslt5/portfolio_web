@@ -11,4 +11,4 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Realización de **videos corporativos** para Alquiler Seguro Grupo con el objetivo de presentar e informar sobre la marca y sus servicios.

@@ -11,4 +11,16 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Aplicación web full stack para gestionar tareas y proyectos basado en paneles Kanban.
+
+- **REST API** realizado con: **Typescript, Node, Express, MongoDB, Docker, Testing y validaciones con Zod.**
+
+- Un sistema de Auth con sesiones autenticadas con **JWT (JSON Web Token)**
+
+- Frontend realizado con **React, Context API, Tailwind, Hooks-form y Drag and Drop.**
+
+Test user:
+
+- **User:** 02@email.com
+
+- **Password:** 1234

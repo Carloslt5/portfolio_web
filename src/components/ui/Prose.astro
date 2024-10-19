@@ -1,0 +1,20 @@
+---
+
+---
+
+<div
+  class="prose text-black no-underline prose-p:mx-0 prose-p:mb-3 prose-p:mt-0 prose-p:leading-6 prose-a:no-underline prose-ul:m-0"
+>
+  <slot />
+</div>
+
+<script>
+  document.querySelectorAll(".prose a").forEach((link) => {
+    const linkText = link.textContent
+    if (!linkText) return
+    const textNode = document.createTextNode(linkText)
+    if (link.parentNode) {
+      link.parentNode.replaceChild(textNode, link)
+    }
+  })
+</script>

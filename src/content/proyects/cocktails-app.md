@@ -11,4 +11,8 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Aplicación web Full-Stack desarrollado con: **ExpressJs, NodeJs, Handlebars, Axios y Bootstrap.**
+
+- Esta web esta conectada con la **API** de : thecocktaildb.
+
+- Hemos implementado un sistema de **Auth** que permite al usuario registrado, según el rol (basic, editor o admin), realizar ciertas funcionalidades.

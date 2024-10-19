@@ -11,4 +11,4 @@ detailsImages:
   ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Diseño y desarrollo del **manual de identidad corporativo** para Alquiler Seguro, con el que se busca **estandarizar** y facilitar la reproducción del **logotipo, diseño de oficinas, material corporativo, etc.**

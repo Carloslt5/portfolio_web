@@ -1,4 +1,5 @@
 ---
+import Prose from "@components/ui/Prose.astro"
 import Title from "@components/ui/Title.astro"
 import Layout from "@layouts/Layout.astro"
 import { Image } from "astro:assets"
@@ -21,9 +22,11 @@ const { Content } = await project.render()
   <section class="mx-auto max-w-screen-2xl pt-32">
     <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
       <Title title={project.data.title} />
-      <article class="max-w-[80ch]">
+      <article class="mb-6 max-w-[80ch]">
         <h5 class="mb-2">Descripción del proyecto</h5>
-        <Content />
+        <Prose>
+          <Content />
+        </Prose>
       </article>
     </div>
   </section>
