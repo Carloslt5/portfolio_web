@@ -10,7 +10,7 @@ export default {
       },
       colors: {
         dark: "#212121",
-        white: "#FCFCFC",
+        light: "#FCFCFC",
         woodsmoke: {
           50: "#f6f6f6",
           100: "#e7e7e7",
@@ -22,7 +22,7 @@ export default {
           700: "#4f4f4f",
           800: "#454545",
           900: "#3d3d3d",
-          950: "#141414",
+          950: "#212121",
         },
       },
       fontSize: {

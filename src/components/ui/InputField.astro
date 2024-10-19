@@ -1,0 +1,22 @@
+---
+type InputType = "text" | "email" | "password" | "number"
+
+type Props = {
+  id: string
+  name: string
+  placeholder: string
+  required?: boolean
+  type: InputType
+}
+
+const { type, name, id, required, placeholder } = Astro.props
+---
+
+<input
+  type={type}
+  name={name}
+  id={id}
+  class="input w-full border-b bg-transparent p-3 text-white focus:rounded-sm focus:outline-light"
+  required={required}
+  placeholder={placeholder}
+/>

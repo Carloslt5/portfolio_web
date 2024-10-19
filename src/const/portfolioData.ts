@@ -14,4 +14,24 @@ export const proyectGroupContent = {
   callToAction: "Nuestro próximo proyecto.",
 }
 
+export const contactContent = {
+  form: {
+    name: {
+      name: "name",
+      placeholder: "Nombre",
+    },
+    email: {
+      name: "email",
+      placeholder: "Email",
+    },
+    message: {
+      name: "message",
+      placeholder: "Mensaje",
+    },
+    submit: {
+      name: "submit",
+      text: "ENVIAR",
+    },
+  },
+}
 export const footerText = "Página web realizada por Carlos Liao Trinh. ¡Gracias por visitar!"
