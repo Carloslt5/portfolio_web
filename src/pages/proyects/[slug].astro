@@ -1,0 +1,37 @@
+---
+import Title from "@components/ui/Title.astro"
+import Layout from "@layouts/Layout.astro"
+import { Image } from "astro:assets"
+import { getCollection } from "astro:content"
+
+export async function getStaticPaths() {
+  const proyects = await getCollection("proyects")
+  return proyects.map((proyect) => ({
+    params: { slug: proyect.slug },
+    props: proyect,
+  }))
+}
+
+const project = Astro.props
+
+const { Content } = await project.render()
+---
+
+<Layout title={project.data.title}>
+  <section class="mx-auto max-w-screen-2xl pt-32">
+    <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
+      <Title title={project.data.title} />
+      <article class="max-w-[80ch]">
+        <h5 class="mb-2">Descripción del proyecto</h5>
+        <Content />
+      </article>
+    </div>
+  </section>
+  <section class="mb-6 flex flex-col items-center justify-center">
+    {
+      project.data.detailsImages.map((media) => {
+        return <Image src={media} alt={project.data.title} class="w-full max-w-[2000px]" />
+      })
+    }
+  </section>
+</Layout>

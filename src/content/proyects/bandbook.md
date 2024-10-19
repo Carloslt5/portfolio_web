@@ -2,6 +2,15 @@
 order: 2
 title: "Brandbook"
 mainImg: "./../../assets/images/proyects/brandbook/visual-brandbook_00.webp"
+detailsImages:
+  [
+    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
+  ]
 ---
 
-# GRÁFICA PUBLICITARIA
+Creación de una **marca y su imagen** para presentar su actividad en la producción y distribución de miel.
+
+Esta marca se presenta como una **identidad moderna, elegante y novedosa,** sin centrarse solo en el producto sino también es los beneficios emocionales y personales que el cliente puede recibir.

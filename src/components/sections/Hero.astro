@@ -5,11 +5,9 @@ import { heroContent } from "@const/portfolioData"
 import { SocialMedia } from "@const/socialMedia"
 import ArrowDown from "@icons/ArrowDown.astro"
 import { getImage } from "astro:assets"
-
 import heroBg from "../../assets/images/fondo.webp"
 
 const heroBackground = await getImage({ src: heroBg, format: "avif" })
-
 const socialMediasinfo = [SocialMedia.GITHUB, SocialMedia.LINKEDIN, SocialMedia.CV]
 ---
 

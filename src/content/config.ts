@@ -7,6 +7,7 @@ const proyects = defineCollection({
       order: z.number(),
       title: z.string(),
       mainImg: image(),
+      detailsImages: z.array(image()),
     }),
 })
 

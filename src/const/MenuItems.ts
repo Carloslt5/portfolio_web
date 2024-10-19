@@ -6,7 +6,7 @@ export enum SectionIds {
 }
 
 export const menuItems = [
-  { name: "Sobre mi", href: `#${SectionIds.ABOUT_ME}` },
-  { name: "Proyectos", href: `#${SectionIds.PROJECT_GROUP}` },
-  { name: "Contacto", href: `#${SectionIds.CONTACT}`, custom: true },
+  { name: "Sobre mi", href: `/#${SectionIds.ABOUT_ME}` },
+  { name: "Proyectos", href: `/#${SectionIds.PROJECT_GROUP}` },
+  { name: "Contacto", href: `/#${SectionIds.CONTACT}`, custom: true },
 ]
