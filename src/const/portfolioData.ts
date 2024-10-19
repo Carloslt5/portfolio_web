@@ -11,6 +11,7 @@ export const heroContent = {
 
 export const proyectGroupContent = {
   title: "Proyectos",
+  callToAction: "Nuestro próximo proyecto.",
 }
 
 export const footerText = "Página web realizada por Carlos Liao Trinh. ¡Gracias por visitar!"
