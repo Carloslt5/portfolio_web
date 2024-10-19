@@ -18,7 +18,7 @@ const project = Astro.props
 const { Content } = await project.render()
 ---
 
-<Layout title={project.data.title}>
+<Layout title={`${project.data.title} - Carlos Liao`}>
   <section class="mx-auto max-w-screen-2xl pt-32">
     <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
       <Title title={project.data.title} />
