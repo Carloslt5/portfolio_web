@@ -18,9 +18,11 @@ links:
 
 Aplicación web Full-Stack desarrollado con: **MongoDB, ExpressJs, NodeJs, Axios, React y React-Bootstrap.**
 
-Esta ampliación surge de la necesidad de crear una agenda donde guardar los lugares favoritos de una persona y luego poder compartirlos.
+Esta ampliación surge de la necesidad de crear una **agenda donde guardar los lugares favoritos de una persona y luego poder compartirlos.**
 
 De esta forma podemos lograr conectar a diferentes usuarios y grupos mediante sus lugares favoritos.
+
+<br/>
 
 En la app se ha implementado:
 

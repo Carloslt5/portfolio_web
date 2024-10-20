@@ -10,7 +10,7 @@ links:
   ]
 ---
 
-Aplicación móvil realizado con React Native que permite buscar usuarios de Github, obtener sus perfiles y sus repositorios.
+Aplicación móvil realizado con **React Native** que permite buscar usuarios de Github, obtener sus perfiles y sus repositorios.
 
 <br/>
 
