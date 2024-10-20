@@ -4,10 +4,8 @@ title: "Task manager"
 mainImg: "./../../assets/images/proyects/task-manager/visual-task-_00.webp"
 detailsImages:
   [
-    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
+    "./../../assets/images/proyects/task-manager/visual-task-_01.webp",
+    "./../../assets/images/proyects/task-manager/visual-task-_02.webp",
   ]
 links:
   [

@@ -27,18 +27,23 @@ const { Content } = await project.render()
         <Prose>
           <Content />
         </Prose>
-        <div class="mt-6 flex flex-wrap items-center gap-3">
-          {
-            project.data.links &&
-              project.data.links.map((link) => {
-                return (
-                  <a href={link.url} aria-current="page" class="btn-custom-black" target="_blank">
-                    {link.label}
-                  </a>
-                )
-              })
-          }
-        </div>
+        {
+          project.data.links.length > 1 && (
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              {project.data.links.map((link) => (
+                <a
+                  href={link.url}
+                  aria-current="page"
+                  class="btn-custom-black"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          )
+        }
       </article>
     </div>
   </section>

@@ -8,14 +8,12 @@ const proyects = defineCollection({
       title: z.string(),
       mainImg: image(),
       detailsImages: z.array(image()),
-      links: z
-        .array(
-          z.object({
-            label: z.string(),
-            url: z.string().url(),
-          }),
-        )
-        .optional(),
+      links: z.array(
+        z.object({
+          label: z.string(),
+          url: z.string().url(),
+        }),
+      ),
     }),
 })
 

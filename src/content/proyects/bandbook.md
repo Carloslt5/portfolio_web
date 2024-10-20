@@ -4,10 +4,10 @@ title: "Brandbook"
 mainImg: "./../../assets/images/proyects/brandbook/visual-brandbook_00.webp"
 detailsImages:
   [
-    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_01.webp",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_02.webp",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_03.webp",
+    "./../../assets/images/proyects/brandbook/visual-brandbook_04.webp",
   ]
 links:
   [

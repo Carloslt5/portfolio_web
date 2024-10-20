@@ -2,13 +2,7 @@
 order: 13
 title: "Rate repository"
 mainImg: "./../../assets/images/proyects/rate-repository/visual-rate-00.webp"
-detailsImages:
-  [
-    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
-  ]
+detailsImages: ["./../../assets/images/proyects/rate-repository/visual-rate-01.webp"]
 links:
   [
     { label: Ver en GitHub, url: https://github.com/Carloslt5/rate-repository-app },

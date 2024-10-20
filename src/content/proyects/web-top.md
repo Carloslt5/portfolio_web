@@ -5,10 +5,9 @@ mainImg: "./../../assets/images/proyects/web-top/visual_web_top_00.webp"
 
 detailsImages:
   [
-    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
+    "./../../assets/images/proyects/web-top/visual_web_top_01.webp",
+    "./../../assets/images/proyects/web-top/visual_web_top_02.webp",
+    "./../../assets/images/proyects/web-top/visual_web_top_03.webp",
   ]
 links:
   [

@@ -4,10 +4,10 @@ title: "Gráfica publicitaria"
 mainImg: "./../../assets/images/proyects/graphic-advertising/visual_fanta_00.webp"
 detailsImages:
   [
-    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
+    "./../../assets/images/proyects/graphic-advertising/visual_fanta_01.webp",
+    "./../../assets/images/proyects/graphic-advertising/visual_fanta_02.webp",
+    "./../../assets/images/proyects/graphic-advertising/visual_fanta_03.webp",
+    "./../../assets/images/proyects/graphic-advertising/visual_fanta_04.webp",
   ]
 links:
   [

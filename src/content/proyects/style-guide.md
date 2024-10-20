@@ -4,10 +4,9 @@ title: "Proyecto UX/UI"
 mainImg: "./../../assets/images/proyects/style-guide/visual_guia_00.webp"
 detailsImages:
   [
-    "./../../assets/images/proyects/brandbook/visual-brandbook_01.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_02.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
-    "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
+    "./../../assets/images/proyects/style-guide/visual_guia_01.webp",
+    "./../../assets/images/proyects/style-guide/visual_guia_02.webp",
+    "./../../assets/images/proyects/style-guide/visual_guia_03.webp",
   ]
 links:
   [
