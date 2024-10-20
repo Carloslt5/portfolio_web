@@ -19,7 +19,7 @@ const { Content } = await project.render()
 ---
 
 <Layout title={`${project.data.title} - Carlos Liao`}>
-  <section class="mx-auto max-w-screen-2xl pt-32">
+  <section class="mx-auto max-w-screen-2xl pt-32" transition:name={project.data.title}>
     <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
       <Title title={project.data.title} />
       <article class="mb-6 flex max-w-[80ch] flex-col gap-3">

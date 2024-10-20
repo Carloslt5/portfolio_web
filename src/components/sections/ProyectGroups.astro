@@ -29,6 +29,7 @@ const proyects = await getCollection("proyects")
             <a
               href={`/proyects/${slug}`}
               class="group relative aspect-square w-full cursor-pointer overflow-hidden bg-woodsmoke-200 sm:w-1/2 md:w-1/3"
+              transition:name={title}
             >
               <Image
                 src={mainImg}
