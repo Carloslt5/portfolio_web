@@ -3,7 +3,7 @@ import InputField, { type InputType } from "@components/ui/InputField.astro"
 import { contactContent } from "@const/portfolioData"
 ---
 
-<form id="form" method="post" class="space-y-6">
+<form id="form" method="post" class="space-y-6" action="https://formspree.io/f/meqwpoao">
   {
     contactContent.formField.map((field) => {
       if (field.type === "textarea") {
@@ -29,7 +29,7 @@ import { contactContent } from "@const/portfolioData"
       )
     })
   }
-  <div>Recaptcha</div>
+  <div class="g-recaptcha" data-sitekey="6LdZ_WwlAAAAALpFeR0EDjdfYBEetDHf76ZbbC2y"></div>
   <button
     type="submit"
     id={contactContent.formButton.name}
