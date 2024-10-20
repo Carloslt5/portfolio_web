@@ -9,6 +9,12 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    { label: Ver Server en GitHub, url: https://github.com/Carloslt5/placeapp-server },
+    { label: Ver Client en GitHub, url: https://github.com/Carloslt5/placeapp-client },
+    { label: Live Site, url: https://place-app.netlify.app },
+  ]
 ---
 
 Aplicación web Full-Stack desarrollado con: **MongoDB, ExpressJs, NodeJs, Axios, React y React-Bootstrap.**

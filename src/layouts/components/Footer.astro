@@ -13,14 +13,14 @@ const socialMediasinfo = [
 ---
 
 <footer
-  class="mt-auto flex flex-col items-center justify-center gap-3 bg-woodsmoke-950 p-6 text-white"
+  class="mt-auto flex flex-col items-center justify-center gap-3 bg-woodsmoke-950 px-4 py-6 text-white"
   id={SectionIds.FOOTER}
 >
   <div class="flex flex-row gap-3">
     <RenderSocialMediaLink info={socialMediasinfo} />
   </div>
   <article class="flex flex-col items-center justify-center">
-    <small>{footerText} </small>
+    <small class="text-center">{footerText} </small>
     <small>©{new Date().getFullYear()}</small>
   </article>
 </footer>

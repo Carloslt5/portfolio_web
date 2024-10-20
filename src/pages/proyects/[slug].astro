@@ -22,15 +22,41 @@ const { Content } = await project.render()
   <section class="mx-auto max-w-screen-2xl pt-32">
     <div class="m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
       <Title title={project.data.title} />
-      <article class="mb-6 max-w-[80ch]">
+      <article class="mb-6 flex max-w-[80ch] flex-col gap-3">
         <h5 class="mb-2">Descripción del proyecto</h5>
         <Prose>
           <Content />
         </Prose>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          {
+            project.data.links &&
+              project.data.links.map((link) => {
+                return (
+                  <a href={link.url} aria-current="page" class="btn-custom-black" target="_blank">
+                    {link.label}
+                  </a>
+                )
+              })
+          }
+        </div>
       </article>
     </div>
   </section>
-  <section class="mb-6 flex flex-col items-center justify-center">
+  <section class="mb-10 flex flex-col items-center justify-center">
+    {
+      project.id === "video.md" && (
+        <div class="flex w-full max-w-screen-2xl flex-col items-center justify-center gap-3 px-4 md:flex-row">
+          <iframe
+            src="https://drive.google.com/file/d/1tAt88-s-1RhDpwt3dLxBjXTiMzm89kIS/preview"
+            class="aspect-video w-full md:w-1/2"
+          />
+          <iframe
+            src="https://drive.google.com/file/d/166kO8kpcR1liSPD3Wr0wsqXv43wz5zVd/preview"
+            class="aspect-video w-full md:w-1/2"
+          />
+        </div>
+      )
+    }
     {
       project.data.detailsImages.map((media) => {
         return <Image src={media} alt={project.data.title} class="w-full max-w-[2000px]" />

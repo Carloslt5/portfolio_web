@@ -9,6 +9,13 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    {
+      label: Ver proyecto,
+      url: https://drive.google.com/file/d/1CbHgwIxtW7O96I7eyysGt7rEThCvl76k/view?usp=share_link,
+    },
+  ]
 ---
 
 Creación de **gráfica publicitaria** cuyo principal elemento es el nuevo sabor de Fanta Kiwi + Menta.

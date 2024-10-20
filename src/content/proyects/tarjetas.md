@@ -9,6 +9,13 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    {
+      label: Ver proyecto,
+      url: https://drive.google.com/file/d/1lp_hvtjidkdD6si91rWdEKIUtMCtmLSn/view?usp=share_link,
+    },
+  ]
 ---
 
 Rediseño y actualización de nuevo **material corporativo,** en este caso tarjetas de presentación.

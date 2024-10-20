@@ -9,6 +9,13 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    {
+      label: Ver proyecto,
+      url: https://drive.google.com/file/d/1b72L_9QJbdEKPMHSkDSQ2OzQkAmrNLRT/view?usp=share_link,
+    },
+  ]
 ---
 
 Rediseño de **cartelería** para locales de Invermax, negocio de compraventa de inmuebles. Estos, son carteles que busca llamar la atención e informar de una promoción.

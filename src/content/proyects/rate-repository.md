@@ -9,9 +9,16 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    { label: Ver en GitHub, url: https://github.com/Carloslt5/rate-repository-app },
+    { label: Live Site, url: https://rate-repository.netlify.app },
+  ]
 ---
 
 Aplicación móvil realizado con React Native que permite buscar usuarios de Github, obtener sus perfiles y sus repositorios.
+
+<br/>
 
 Test user:
 

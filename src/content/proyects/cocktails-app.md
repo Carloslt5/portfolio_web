@@ -9,10 +9,14 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    { label: Ver proyecto en GitHub, url: https://github.com/Carloslt5/cocktailsApp },
+    { label: Live Site, url: https://cocktailsapp.fly.dev },
+  ]
 ---
 
 Aplicación web Full-Stack desarrollado con: **ExpressJs, NodeJs, Handlebars, Axios y Bootstrap.**
 
-- Esta web esta conectada con la **API** de : thecocktaildb.
-
-- Hemos implementado un sistema de **Auth** que permite al usuario registrado, según el rol (basic, editor o admin), realizar ciertas funcionalidades.
+Esta web esta conectada con la **API** de : thecocktaildb.
+Hemos implementado un sistema de **Auth** que permite al usuario registrado, según el rol (basic, editor o admin), realizar ciertas funcionalidades.

@@ -9,6 +9,13 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    {
+      label: Ver proyecto,
+      url: https://drive.google.com/file/d/1qU8Z5lRNObga3bhn7KxhUKka3_a0VEqJ/view?usp=share_link,
+    },
+  ]
 ---
 
 Diseño de un **flyer** para el negocio de compraventa de inmuebles, Invermax. Con esto se busca **publicitar y promocionar** los diferentes productos y servicios.

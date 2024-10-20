@@ -9,6 +9,12 @@ detailsImages:
     "./../../assets/images/proyects/brandbook/visual-brandbook_03.jpg",
     "./../../assets/images/proyects/brandbook/visual-brandbook_04.jpg",
   ]
+links:
+  [
+    { label: Ver Server en GitHub, url: https://github.com/Carloslt5/task-manager-server },
+    { label: Ver Client en GitHub, url: https://github.com/Carloslt5/task-manager-client },
+    { label: Live Site, url: https://kanban-manager-app.netlify.app },
+  ]
 ---
 
 Aplicación web full stack para gestionar tareas y proyectos basado en paneles Kanban.
@@ -18,6 +24,8 @@ Aplicación web full stack para gestionar tareas y proyectos basado en paneles K
 - Un sistema de Auth con sesiones autenticadas con **JWT (JSON Web Token)**
 
 - Frontend realizado con **React, Context API, Tailwind, Hooks-form y Drag and Drop.**
+
+<br/>
 
 Test user:
 
