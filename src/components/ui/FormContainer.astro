@@ -29,7 +29,9 @@ import { contactContent } from "@const/portfolioData"
       )
     })
   }
-  <div class="g-recaptcha" data-sitekey="6LdZ_WwlAAAAALpFeR0EDjdfYBEetDHf76ZbbC2y"></div>
+  <div class="recaptcha-container">
+    <div class="g-recaptcha" data-sitekey="6LdZ_WwlAAAAALpFeR0EDjdfYBEetDHf76ZbbC2y"></div>
+  </div>
   <button
     type="submit"
     id={contactContent.formButton.name}
@@ -39,3 +41,12 @@ import { contactContent } from "@const/portfolioData"
     {contactContent.formButton.text}
   </button>
 </form>
+
+<style>
+  @media only screen and (max-width: 500px) {
+    .g-recaptcha {
+      transform: scale(0.8);
+      transform-origin: 0 0;
+    }
+  }
+</style>
