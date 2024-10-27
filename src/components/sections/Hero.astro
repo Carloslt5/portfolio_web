@@ -1,0 +1,34 @@
+---
+import RenderSocialMediaLink from "@components/ui/RenderSocialMediaLink.astro"
+import { SectionIds } from "@const/MenuItems"
+import { heroContent } from "@const/portfolioData"
+import { SocialMedia } from "@const/socialMedia"
+import ArrowDown from "@icons/ArrowDown.astro"
+import { getImage } from "astro:assets"
+import heroBg from "../../assets/images/fondo.webp"
+
+const heroBackground = await getImage({ src: heroBg, format: "avif" })
+const socialMediasinfo = [SocialMedia.GITHUB, SocialMedia.LINKEDIN, SocialMedia.CV]
+---
+
+<section
+  class="h-svh max-h-[1200px] min-h-fit bg-cover bg-center bg-no-repeat text-white"
+  style={`background-image: url(${heroBackground.src});`}
+  id={SectionIds.ABOUT_ME}
+>
+  <div class="h-full bg-black bg-opacity-50">
+    <div class="relative m-auto flex h-full max-w-screen-2xl flex-col justify-center gap-4 p-4">
+      <h1 class="uppercase">{heroContent.title}</h1>
+      <article class="max-w-[70ch]">
+        {heroContent.paragraphs.map((paragraph) => <p set:html={paragraph} />)}
+      </article>
+
+      <div class="flex flex-row gap-3">
+        <RenderSocialMediaLink info={socialMediasinfo} />
+      </div>
+
+      <a href="#proyect-group" title="Ver más" class="btn-custom">Ver proyectos</a>
+      <ArrowDown class="basic-hover absolute bottom-4 left-1/2 h-8 -translate-x-1/2" />
+    </div>
+  </div>
+</section>

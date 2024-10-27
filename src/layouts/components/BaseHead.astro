@@ -1,0 +1,34 @@
+---
+import "@styles/styles.css"
+import { ViewTransitions } from "astro:transitions"
+import SeoHead from "./SeoHead.astro"
+
+interface Props {
+  title: string
+  description?: string
+  image?: string
+}
+const { title } = Astro.props
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <meta name="generator" content={Astro.generator} />
+
+  <link rel="preload" href="/fonts/Montserrat-Thin.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link
+    rel="preload"
+    href="/fonts/Montserrat-ExtraBold.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <title>{title}</title>
+  <ViewTransitions />
+  <SeoHead />
+  <script src="https://www.google.com/recaptcha/api.js" async defer is:inline></script>
+</head>

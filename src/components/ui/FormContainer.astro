@@ -1,0 +1,52 @@
+---
+import InputField, { type InputType } from "@components/ui/InputField.astro"
+import { contactContent } from "@const/portfolioData"
+---
+
+<form id="form" method="post" class="space-y-6" action="https://formspree.io/f/meqwpoao">
+  {
+    contactContent.formField.map((field) => {
+      if (field.type === "textarea") {
+        return (
+          <textarea
+            name={field.name}
+            id={field.id}
+            placeholder={field.placeholder}
+            class="peer min-h-80 w-full rounded-sm p-3"
+            required
+          />
+        )
+      }
+
+      return (
+        <InputField
+          type={field.type as InputType}
+          name={field.name}
+          id={field.id}
+          placeholder={field.placeholder}
+          required
+        />
+      )
+    })
+  }
+  <div class="recaptcha-container">
+    <div class="g-recaptcha" data-sitekey="6LdZ_WwlAAAAALpFeR0EDjdfYBEetDHf76ZbbC2y"></div>
+  </div>
+  <button
+    type="submit"
+    id={contactContent.formButton.name}
+    value={contactContent.formButton.text}
+    class="btn-custom cursor-pointer text-white"
+  >
+    {contactContent.formButton.text}
+  </button>
+</form>
+
+<style>
+  @media only screen and (max-width: 500px) {
+    .g-recaptcha {
+      transform: scale(0.8);
+      transform-origin: 0 0;
+    }
+  }
+</style>
