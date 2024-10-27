@@ -1,26 +1,27 @@
 ---
 import { AstroSeo } from "@astrolib/seo"
+const canonicalUrl = Astro.url.href
 ---
 
 <AstroSeo
   title="Carlos Liao"
   description="Soy Carlos Liao, diseñador gráfico y mi gran interés por conocer cómo implementar esto en el mundo digital, me ha llevado a seguir formándome en el mundo de diseño web y diseño UX/UI."
-  canonical="https://www.carloslt.com/"
+  canonical={canonicalUrl}
   openGraph={{
-    url: "https://www.carloslt.com/",
+    url: canonicalUrl,
     title: "Carlos Liao | Home",
     description:
       "Soy Carlos Liao, diseñador gráfico y mi gran interés por conocer cómo implementar esto en el mundo digital, me ha llevado a seguir formándome en el mundo de diseño web y diseño UX/UI.",
     images: [
       {
-        url: "https://www.carloslt.com/images/preview.jpg",
+        url: `${canonicalUrl}images/preview.jpg`,
         width: 800,
         height: 600,
         alt: "Portafolio de Carlos Liao",
         type: "image/jpg",
       },
       {
-        url: "https://www.carloslt.com//images/preview.jpg",
+        url: `${canonicalUrl}images/preview.jpg`,
         width: 900,
         height: 800,
         alt: "Portafolio de Carlos Liao",
