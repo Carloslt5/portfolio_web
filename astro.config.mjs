@@ -13,4 +13,9 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+  vite: {
+    build: {
+      minify: "esbuild",
+    },
+  },
 })

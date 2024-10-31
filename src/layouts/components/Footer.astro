@@ -20,7 +20,7 @@ const socialMediasinfo = [
     <RenderSocialMediaLink info={socialMediasinfo} />
   </div>
   <article class="flex flex-col items-center justify-center">
-    <small class="text-center">{footerText} </small>
+    <small class="text-center" set:html={footerText} />
     <small>©{new Date().getFullYear()}</small>
   </article>
 </footer>
