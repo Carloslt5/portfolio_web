@@ -37,11 +37,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^5.1.2",
-    "@astrojs/ts-plugin": "^1.10.2",
+    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/ts-plugin": "^1.10.4",
     "@astrolib/seo": "^1.0.0-beta.8",
     "@heroicons/react": "^2.1.5",
-    "astro": "^4.16.2",
+    "astro": "^5.2.5",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.3"
   },

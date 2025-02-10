@@ -6,10 +6,10 @@ import { Image } from "astro:assets"
 import { getCollection } from "astro:content"
 
 export async function getStaticPaths() {
-  const proyects = await getCollection("proyects")
-  return proyects.map((proyect) => ({
-    params: { slug: proyect.slug },
-    props: proyect,
+  const projects = await getCollection("projects")
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: project,
   }))
 }
 
@@ -64,7 +64,13 @@ const { Content } = await project.render()
     }
     {
       project.data.detailsImages.map((media) => {
-        return <Image src={media} alt={project.data.title} class="w-full max-w-[2000px]" />
+        return (
+          <Image
+            src={media as ImageMetadata}
+            alt={project.data.title}
+            class="w-full max-w-[2000px]"
+          />
+        )
       })
     }
   </section>

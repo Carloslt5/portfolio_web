@@ -61,8 +61,8 @@ export const contactContent = {
     },
     {
       title: "CONTACTO",
-      subtitle: "MADRID, ESPAÑA",
-      text: "Escríbeme, hablemos.",
+      subtitle: "CONTACTAME",
+      text: "Estaré encantado de responder tus dudas.",
       link: "mailto:carlos.lt97@gmail.com",
       icon: Email,
     },
