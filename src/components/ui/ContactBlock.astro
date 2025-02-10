@@ -12,7 +12,7 @@ const { title, subtitle, link, text, icon: IconComponent } = Astro.props
 ---
 
 <div class="flex flex-col items-center">
-  <a href={link} target="_blank" title={title} class="mb-3 inline-block">
+  <a href={link} target="_blank" title={title} class="mb-3 inline-block" rel="nofollow">
     <IconComponent class="h-10 w-10" />
   </a>
   <div class="flex flex-col items-center justify-center gap-2 text-center">
