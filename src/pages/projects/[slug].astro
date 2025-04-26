@@ -2,6 +2,7 @@
 import Prose from "@components/ui/Prose.astro"
 import Title from "@components/ui/Title.astro"
 import Layout from "@layouts/Layout.astro"
+import type { ImageMetadata } from "astro"
 import { Image } from "astro:assets"
 import { getCollection } from "astro:content"
 
@@ -28,7 +29,7 @@ const { Content } = await project.render()
           <Content />
         </Prose>
         {
-          project.data.links.length > 1 && (
+          project.data.links.length && (
             <div class="mt-6 flex flex-wrap items-center gap-3">
               {project.data.links.map((link) => (
                 <a
