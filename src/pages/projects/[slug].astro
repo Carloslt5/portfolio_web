@@ -29,7 +29,7 @@ const { Content } = await project.render()
           <Content />
         </Prose>
         {
-          project.data.links.length && (
+          project.data.links.length > 0 && (
             <div class="mt-6 flex flex-wrap items-center gap-3">
               {project.data.links.map((link) => (
                 <a
