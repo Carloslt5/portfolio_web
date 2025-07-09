@@ -1,28 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  .bg-ligth {
-    @apply bg-woodsmoke-50;
-  }
-
-  .bg-blur {
-    @apply bg-woodsmoke-950/80 backdrop-blur-md;
-  }
-
-  .btn-custom {
-    @apply inline-block w-fit rounded-lg border-[0.5px] border-white bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:text-dark hover:shadow-[inset_0_-100px_0_0_white] active:scale-90;
-  }
-
-  .btn-custom-black {
-    @apply inline-block w-fit rounded-lg border-[0.5px] border-black bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:text-white hover:shadow-[inset_0_-100px_0_0_black] active:scale-90;
-  }
-
-  .basic-hover {
-    @apply transform opacity-80 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:opacity-100;
-  }
-}
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @font-face {
   font-display: swap;
@@ -46,4 +23,98 @@
   font-style: normal;
   font-weight: 800;
   src: url("/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@theme {
+  --font-sans: "Montserrat", sans-serif, system-ui, sans-serif;
+
+  --color-dark: #212121;
+  --color-light: #fcfcfc;
+
+  --color-woodsmoke-50: #f6f6f6;
+  --color-woodsmoke-100: #e7e7e7;
+  --color-woodsmoke-200: #d1d1d1;
+  --color-woodsmoke-300: #b0b0b0;
+  --color-woodsmoke-400: #888888;
+  --color-woodsmoke-500: #6d6d6d;
+  --color-woodsmoke-600: #5d5d5d;
+  --color-woodsmoke-700: #4f4f4f;
+  --color-woodsmoke-800: #454545;
+  --color-woodsmoke-900: #3d3d3d;
+  --color-woodsmoke-950: #212121;
+
+  --font-size-h1: clamp(2em, 8.5vw, 3.125em);
+  --font-size-h2: 2.5em;
+  --font-size-h3: 2em;
+  --font-size-h4: clamp(1.1em, 3vw, 1.5em);
+  --font-size-h5: 1.25em;
+  --font-size-p: 1em;
+  --font-size-small: 0.8em;
+
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+  h1 {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-h1);
+    font-weight: 800;
+  }
+
+  h2 {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-h2);
+    font-weight: 800;
+  }
+
+  h3 {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-h3);
+    font-weight: 800;
+  }
+
+  h4 {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-h4);
+    font-weight: 800;
+  }
+
+  h5 {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-h5);
+    font-weight: 800;
+  }
+
+  p {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-p);
+    margin-bottom: 0.75rem;
+  }
+}
+
+@layer utility {
+  .bg__light {
+    @apply bg-woodsmoke-50;
+  }
+
+  .bg__light {
+    @apply bg-woodsmoke-50;
+  }
+
+  .bg__blur {
+    @apply bg-woodsmoke-950/50 backdrop-blur-md;
+  }
+
+  .btn__custom {
+    @apply hover:text-dark inline-block w-fit rounded-lg border-[0.5px] border-white bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:shadow-[inset_0_-100px_0_0_white] active:scale-90;
+  }
+
+  .btn__custom-black {
+    @apply inline-block w-fit rounded-lg border-[0.5px] border-black bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:text-white hover:shadow-[inset_0_-100px_0_0_black] active:scale-90;
+  }
+
+  .basic__hover {
+    @apply transform opacity-80 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:opacity-100;
+  }
 }

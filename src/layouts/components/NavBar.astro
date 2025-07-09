@@ -3,8 +3,10 @@ import logo from "@assets/images/logo.svg"
 import { menuItems } from "@const/MenuItems"
 ---
 
-<header class="bg-blur absolute left-0 top-0 z-20 w-full">
-  <div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between px-4 py-2">
+<header class="bg__blur absolute top-0 left-0 z-20 w-full">
+  <div
+    class="mx-auto flex max-w-(--breakpoint-2xl) flex-wrap items-center justify-between px-4 py-2"
+  >
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <span class="self-center whitespace-nowrap">
         <img src={logo.src} class="h-8 w-28" alt="Carlos Liao logo" />
@@ -14,7 +16,7 @@ import { menuItems } from "@const/MenuItems"
       id="navbar-toggle"
       data-collapse-toggle="navbar-default"
       type="button"
-      class="flex h-9 w-9 items-center justify-center rounded-md text-white hover:bg-woodsmoke-500 md:hidden"
+      class="hover:bg-woodsmoke-500 flex h-9 w-9 items-center justify-center rounded-md text-white md:hidden"
       aria-controls="navbar-default"
       aria-expanded="false"
     >
@@ -33,14 +35,14 @@ import { menuItems } from "@const/MenuItems"
       <ul class="flex w-full flex-col items-center gap-6 md:flex-row">
         {
           menuItems.map((item) => (
-            <li class="menu-item font-thin uppercase text-white">
+            <li class="menu-item font-thin text-white uppercase">
               <a
                 href={item.href}
                 aria-current="page"
                 class:list={[
                   "block text-sm",
                   item.custom
-                    ? "btn-custom"
+                    ? "btn__custom"
                     : "p-2 decoration-0 underline-offset-4 hover:underline",
                 ]}
               >

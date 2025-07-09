@@ -37,12 +37,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^6.0.0",
     "@astrojs/ts-plugin": "^1.10.4",
     "@astrolib/seo": "^1.0.0-beta.8",
     "@heroicons/react": "^2.1.5",
     "astro": "^5.2.5",
-    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.3"
   },
   "devDependencies": {
@@ -50,6 +48,7 @@
     "@commitlint/config-conventional": "^19.5.0",
     "@eslint/js": "^9.12.0",
     "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/vite": "^4.1.11",
     "@typescript-eslint/parser": "^8.8.1",
     "eslint": "^9.12.0",
     "eslint-plugin-astro": "^1.2.4",
@@ -60,7 +59,8 @@
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.10",
-    "prettier-plugin-tailwindcss": "^0.6.8",
+    "prettier-plugin-tailwindcss": "^0.6.13",
+    "tailwindcss": "^4.1.11",
     "typescript-eslint": "^8.8.1"
   }
 }

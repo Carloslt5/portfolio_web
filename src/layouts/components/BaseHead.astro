@@ -1,6 +1,6 @@
 ---
 import "@styles/styles.css"
-import { ViewTransitions } from "astro:transitions"
+import { ClientRouter } from "astro:transitions"
 import SeoHead from "./SeoHead.astro"
 
 interface Props {
@@ -28,7 +28,7 @@ const { title } = Astro.props
     crossorigin
   />
   <title>{title}</title>
-  <ViewTransitions />
+  <ClientRouter />
   <SeoHead />
   <script src="https://www.google.com/recaptcha/api.js" async defer is:inline></script>
 </head>

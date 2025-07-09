@@ -16,4 +16,6 @@ links:
   ]
 ---
 
-**Rediseño de web** para la película de Top Gun: Maverick (2022), construida bajo **Html5, CSS (Sass) y JavaScript, adapatable a diferentes tamaños de pantalla y dispositivos.** Proyecto académico.
+**Rediseño de web** para la película de Top Gun: Maverick (2022), construida bajo **Html5, CSS (Sass) y JavaScript, adapatable a diferentes tamaños de pantalla y dispositivos.**
+
+Proyecto académico.
