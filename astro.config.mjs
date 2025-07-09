@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite"
 export default defineConfig({
   compressHTML: true,
   build: {
-    inlineStylesheets: "always",
+    inlineStylesheets: "auto",
   },
   devToolbar: {
     enabled: false,
