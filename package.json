@@ -30,7 +30,7 @@
     "prettier:fix": "prettier --write src \"**/*.{js,ts,tsx,astro}\"",
     "fix": "npm run eslint:fix && npm run prettier:fix",
     "git:pre-commit": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "(src)/**/*.(ts|tsx|astro)": [
