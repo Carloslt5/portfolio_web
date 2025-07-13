@@ -4,7 +4,6 @@ title: "Cocktails app"
 mainImg: "./../../assets/images/proyects/cocktails-app/visual-cocktails-_00.webp"
 detailsImages:
   [
-    "./../../assets/images/proyects/cocktails-app/visual-cocktails-_00.webp",
     "./../../assets/images/proyects/cocktails-app/visual-cocktails-_01.webp",
     "./../../assets/images/proyects/cocktails-app/visual-cocktails-_02.webp",
   ]
