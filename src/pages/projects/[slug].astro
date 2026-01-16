@@ -69,6 +69,7 @@ const { Content } = await project.render()
           <Image
             src={media as ImageMetadata}
             alt={project.data.title}
+            loading="lazy"
             class="w-full max-w-[2000px]"
           />
         )

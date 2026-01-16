@@ -8,13 +8,18 @@ import { contactContent } from "@const/portfolioData"
     contactContent.formField.map((field) => {
       if (field.type === "textarea") {
         return (
-          <textarea
-            name={field.name}
-            id={field.id}
-            placeholder={field.placeholder}
-            class="peer bg-woodsmoke-50 min-h-80 w-full rounded-sm p-3"
-            required
-          />
+          <div class="textarea-wrapper">
+            <label for={field.id} class="sr-only">
+              {field.placeholder}
+            </label>
+            <textarea
+              name={field.name}
+              id={field.id}
+              placeholder={field.placeholder}
+              class="peer bg-woodsmoke-50 min-h-80 w-full rounded-sm p-3"
+              required
+            />
+          </div>
         )
       }
 
@@ -24,6 +29,7 @@ import { contactContent } from "@const/portfolioData"
           name={field.name}
           id={field.id}
           placeholder={field.placeholder}
+          label={field.placeholder}
           required
         />
       )
@@ -37,6 +43,7 @@ import { contactContent } from "@const/portfolioData"
     id={contactContent.formButton.name}
     value={contactContent.formButton.text}
     class="btn__custom cursor-pointer text-white"
+    aria-describedby="submit-description"
   >
     {contactContent.formButton.text}
   </button>

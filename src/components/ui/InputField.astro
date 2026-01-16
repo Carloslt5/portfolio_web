@@ -5,18 +5,28 @@ type Props = {
   id: string
   name: string
   placeholder: string
-  required?: boolean
   type: InputType
+  label: string
+  required?: boolean
 }
 
-const { type, name, id, required, placeholder } = Astro.props
+const { type, name, id, required, placeholder, label } = Astro.props
 ---
 
-<input
-  type={type}
-  name={name}
-  id={id}
-  class="focus:bg-woodsmoke-50 focus:text-woodsmoke-700 w-full overflow-hidden border-b bg-transparent p-3 text-white focus:rounded-sm"
-  required={required}
-  placeholder={placeholder}
-/>
+<div class="input-wrapper">
+  {
+    label && (
+      <label for={id} class="sr-only">
+        {label}
+      </label>
+    )
+  }
+  <input
+    type={type}
+    name={name}
+    id={id}
+    class="focus:bg-woodsmoke-50 focus:text-woodsmoke-700 w-full overflow-hidden border-b bg-transparent p-3 text-white focus:rounded-sm"
+    required={required}
+    placeholder={placeholder}
+  />
+</div>

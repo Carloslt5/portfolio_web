@@ -36,6 +36,7 @@ const projects = await getCollection("projects")
                 src={mainImg as ImageMetadata}
                 alt={title}
                 format="webp"
+                loading="lazy"
                 class="h-full w-full transform object-cover transition-transform duration-300 ease-in-out md:grayscale md:group-hover:scale-105 md:group-hover:grayscale-0"
               />
               <div class="absolute bottom-0 left-0 px-4 pb-3 transition-all duration-300 ease-in-out group-hover:translate-y-0 md:translate-y-16">
