@@ -22,11 +22,3 @@ Aplicación web full stack para gestionar tareas y proyectos basado en paneles K
 - Un sistema de Auth con sesiones autenticadas con **JWT (JSON Web Token)**
 
 - Frontend realizado con **React, Context API, Tailwind, Hooks-form y Drag and Drop.**
-
-<br/>
-
-Test user:
-
-- **User:** 02@email.com
-
-- **Password:** 1234
