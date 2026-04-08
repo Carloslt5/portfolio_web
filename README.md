@@ -10,7 +10,7 @@ A modern, responsive portfolio website built with Astro, TypeScript, and Tailwin
 - **Language**: [TypeScript 5.9](https://typescriptlang.org/) - Type safety
 - **Styling**: [TailwindCSS v4](https://tailwindcss.com/) - Utility-first CSS
 - **Content**: Astro Content Collections - Structured content management
-- **SEO**: [@astrolib/seo](https://github.com/astrolib/seo) - Meta tags and SEO helpers
+- **SEO**: Native HTML meta tags
 - **Icons**: Custom SVG components + Heroicons
 
 ### Directory Structure

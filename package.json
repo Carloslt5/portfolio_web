@@ -39,31 +39,30 @@
     ]
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
-    "@astrojs/ts-plugin": "^1.10.6",
-    "@astrolib/seo": "^1.0.0-beta.8",
+    "@astrojs/check": "^0.9.2",
+    "@astrojs/ts-plugin": "^1.10.7",
     "@heroicons/react": "^2.2.0",
-    "astro": "^5.16.10",
+    "astro": "^6.1.5",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.3.1",
-    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
     "@eslint/js": "^9.39.2",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.2.2",
     "@typescript-eslint/parser": "^8.56.1",
     "eslint": "^9.39.2",
-    "eslint-plugin-astro": "^1.5.0",
+    "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-import": "^2.32.0",
-    "globals": "^17.0.0",
+    "globals": "^17.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "prettier": "^3.8.0",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-astro-organize-imports": "^0.4.11",
+    "prettier-plugin-astro-organize-imports": "^0.4.12",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.2",
     "typescript-eslint": "^8.56.1"
   }
 }

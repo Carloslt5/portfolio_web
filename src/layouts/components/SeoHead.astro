@@ -1,32 +1,30 @@
----
-import { AstroSeo } from "@astrolib/seo"
----
-
-<AstroSeo
-  title="Carlos Liao"
-  description="Carlos Liao, desarrollador web, con experiencia en diseño gráfico y artes gráficas."
-  canonical="https://www.carloslt.com/"
-  openGraph={{
-    url: "https://www.carloslt.com/",
-    title: "Carlos Liao | Home",
-    description:
-      "Carlos Liao, desarrollador web, con experiencia en diseño gráfico y artes gráficas.",
-    images: [
-      {
-        url: "/images/preview.jpg",
-        width: 800,
-        height: 600,
-        alt: "Portafolio de Carlos Liao",
-        type: "image/jpg",
-      },
-      {
-        url: "/images/preview.jpg",
-        width: 900,
-        height: 800,
-        alt: "Portafolio de Carlos Liao",
-        type: "image/jpg",
-      },
-    ],
-    site_name: "Carlos Liao",
-  }}
+<!-- SEO Meta Tags -->
+<meta
+  name="description"
+  content="Carlos Liao, desarrollador web, con experiencia en diseño gráfico y artes gráficas."
 />
+<link rel="canonical" href="https://www.carloslt.com/" />
+
+<!-- Open Graph -->
+<meta property="og:url" content="https://www.carloslt.com/" />
+<meta property="og:title" content="Carlos Liao | Home" />
+<meta
+  property="og:description"
+  content="Carlos Liao, desarrollador web, con experiencia en diseño gráfico y artes gráficas."
+/>
+<meta property="og:image" content="/images/preview.jpg" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image:alt" content="Portafolio de Carlos Liao" />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:site_name" content="Carlos Liao" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Carlos Liao | Home" />
+<meta
+  name="twitter:description"
+  content="Carlos Liao, desarrollador web, con experiencia en diseño gráfico y artes gráficas."
+/>
+<meta name="twitter:image" content="/images/preview.jpg" />

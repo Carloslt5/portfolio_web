@@ -1,7 +1,9 @@
-import { defineCollection, z } from "astro:content"
+import { glob } from "astro/loaders"
+import { defineCollection } from "astro:content"
+import { z } from "astro/zod"
 
 const projects = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/projects" }),
   schema: ({ image }) =>
     z.object({
       order: z.number(),
