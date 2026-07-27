@@ -30,12 +30,11 @@ const { Content } = await render(project)
         </Prose>
         {
           project.data.links.length > 0 && (
-            <div class="bg mt-6 flex flex-wrap items-center gap-3">
+            <div class="bg mt-6 flex flex-col gap-3 md:flex-row md:flex-wrap md:items-center">
               {project.data.links.map((link) => (
                 <a
                   href={link.url}
-                  aria-current="page"
-                  class="btn__custom-black"
+                  class="btn__custom-black w-full text-center md:w-fit"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -82,7 +81,7 @@ const { Content } = await render(project)
             src={media as ImageMetadata}
             alt={project.data.title}
             loading="lazy"
-            class="w-full max-w-[2000px]"
+            class="w-full max-w-500"
           />
         )
       })
