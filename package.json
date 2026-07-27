@@ -16,7 +16,7 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": ">=22.13.0"
+    "node": ">=24.18.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -63,5 +63,8 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.3.3",
     "typescript-eslint": "^8.65.0"
+  },
+  "volta": {
+    "node": "24.18.0"
   }
 }
