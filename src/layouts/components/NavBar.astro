@@ -38,7 +38,6 @@ import { menuItems } from "@const/MenuItems"
             <li class="menu-item font-thin text-white uppercase">
               <a
                 href={item.href}
-                aria-current="page"
                 class:list={[
                   "block text-sm",
                   item.custom
@@ -57,20 +56,11 @@ import { menuItems } from "@const/MenuItems"
 </header>
 
 <script>
-  const button = document.getElementById("navbar-toggle")
-  const nav = document.getElementById("navbar-default")
-  if (!button || !nav) {
-    throw new Error("Navbar toggle or navbar default not found")
-  }
+  document.addEventListener("click", (event) => {
+    const target = event.target
+    if (!(target instanceof Element)) return
+    if (!target.closest("#navbar-toggle") && !target.closest(".menu-item")) return
 
-  button.addEventListener("click", () => {
-    nav.classList.toggle("h-[30vh]")
-  })
-
-  const menuItems = document.querySelectorAll(".menu-item")
-  menuItems.forEach((el) => {
-    el.addEventListener("click", () => {
-      nav.classList.toggle("h-[30vh]")
-    })
+    document.getElementById("navbar-default")?.classList.toggle("h-[30vh]")
   })
 </script>

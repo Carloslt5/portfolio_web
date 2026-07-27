@@ -111,7 +111,7 @@
   }
 
   .btn__custom-black {
-    @apply inline-block w-fit rounded-lg border-[0.5px] border-black bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:text-white hover:shadow-[inset_0_-100px_0_0_black] active:scale-90;
+    @apply inline-block rounded-lg border-[0.5px] border-black bg-transparent px-6 py-2 transition-all duration-500 ease-in-out hover:text-white hover:shadow-[inset_0_-100px_0_0_black] active:scale-90;
   }
 
   .basic__hover {
