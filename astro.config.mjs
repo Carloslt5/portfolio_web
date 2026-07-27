@@ -15,6 +15,7 @@ export default defineConfig({
   vite: {
     build: {
       minify: "esbuild",
+      cssTarget: ["chrome100", "firefox100", "safari15", "edge100"],
     },
     plugins: [tailwindcss()],
   },
